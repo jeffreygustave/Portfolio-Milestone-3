@@ -18,6 +18,10 @@ const messageError = document.querySelector("#messageError");
 form.addEventListener("submit", (event) => {
   let valid = true;
 
+  nameError.textContent = "";
+  emailError.textContent = "";
+  messageError.textContent = "";
+
   if (nameField.value.trim() === "") {
     nameError.textContent = "Name is required.";
     valid = false;
